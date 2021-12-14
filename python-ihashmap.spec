@@ -5,7 +5,7 @@
 
 Name:           python-%{pkgname}
 Version:        %package_version
-Release:        1test1%{dist}
+Release:        1test2%{dist}
 Summary:        Indexed hashmap wrapper in Python
 
 Group:          Libraries
