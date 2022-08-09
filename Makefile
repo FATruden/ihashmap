@@ -47,7 +47,7 @@ rpm: srpm
 spec:
 	@git cat-file -p $(HEAD_SHA):$(PACKAGE).spec | sed -e 's,@BUILDID@,$(BUILDID),g' > $(PACKAGE).spec
 
-sources: clean spec
+sources2: clean spec
 	@git archive --format=tar --prefix=$(PACKAGE)-$(VERSION)/ $(HEAD_SHA) | \
 		gzip > $(PACKAGE)-$(VERSION).tar.gz
 
